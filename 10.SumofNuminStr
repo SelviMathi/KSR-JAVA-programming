@@ -1,1 +1,35 @@
+import java.util.Scanner;
+public class SumofNumsInStr {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        String s=sc.nextLine();
+        int n=SumofNums(s);
+        System.out.println(n);
+        sc.close();
+    }
+    static int SumofNums(String s)
+    {
+        int sum=0;
+        for(int i=0;i<s.length();i++)
+        {
+            if (Character.isDigit(s.charAt(i))) 
+              {
+                String stn = "" + s.charAt(i); 
+                int j = i + 1;
+                while (j < s.length() && Character.isDigit(s.charAt(j))) 
+                  {    
+                    stn += s.charAt(j);
+                    j++;
+                  }
+                i = j - 1;
+
+                int n = Integer.parseInt(stn); 
+                sum += n; 
+               }
+        }
+        return sum;
+    }
+}
+
+
 
