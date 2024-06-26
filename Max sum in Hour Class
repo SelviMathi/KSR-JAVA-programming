@@ -1,0 +1,36 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner Sc=new Scanner(System.in);
+        int n=Sc.nextInt();
+        int arr[][]=new int[n][n];
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<n;j++)
+            {
+                arr[i][j]=Sc.nextInt();
+            }
+        }
+        int maxSum = MaxHourglassSum(arr);
+        System.out.println("Maximum Hourglass Sum: " + maxSum);
+    }
+
+    public static int MaxHourglassSum(int[][] arr) {
+        int maxSum = Integer.MIN_VALUE;
+
+        for (int i = 0; i <= arr.length - 3; i++) {
+            for (int j = 0; j <= arr[i].length - 3; j++) {
+                int currentSum = CalSum(arr, i, j);
+                maxSum = Math.max(maxSum, currentSum);
+            }
+        }
+
+        return maxSum;
+    }
+
+    private static int CalSum(int[][] arr, int row, int col) {
+        return arr[row][col] + arr[row][col + 1] + arr[row][col + 2]+ arr[row + 1][col + 1]+ arr[row + 2][col] + arr[row + 2][col + 1] + arr[row + 2][col + 2];
+    }
+}
