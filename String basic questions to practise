@@ -1,12 +1,12 @@
-1.Print each character in string
-2.Print each character ASCII in string
-3.Print only UPPERCASE of character in string
-4.Print only lowercase of character in string
-5.letter count in string
-6.Count of UPPER/lower case in String
-7.Create a new string containing only UPPERCASE
-8.Create a new string with digits followed by letters in a string
-9.Create a new string after removing all spaces n a string
+1.Print each character in newline from given string
+2.Print ASCII value for each character in given string
+3.Print only UPPERCASE of character in given string
+4.Print only lowercase of character in given  string
+5.print Alphabet count in given string
+6.Print Count of UPPER & lower case of given String
+7.Create a new string containing only UPPERCASE from given string
+8.Create a new string with digits followed by letters from given string
+9.Create a new string after removing all spaces in given string
 10.Reverse the case of a string
 11.Palindrome or not
 12.Create a word encoding program which moves each letter by 2
