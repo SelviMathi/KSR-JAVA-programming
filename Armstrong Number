@@ -1,0 +1,30 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s=new Scanner(System.in);//int sum=0;// 
+		String S=s.nextLine();
+		int a=S.length();
+		int n=Integer.parseInt(S);
+		int temp=n;
+		int t,sum=0;
+		while(n>0){
+		    t=n%10;
+		    sum+=Math.pow(t,a);
+		    n/=10;
+		}
+		if(temp==sum){
+		    System.out.println("Amstrong");
+		}
+		else{
+		    System.out.println("Not an amstrong");
+		}
+	}
+}
