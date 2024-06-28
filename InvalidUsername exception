@@ -1,0 +1,27 @@
+public class Main {
+    
+    static class InvalidUsernameException extends Exception {
+        public InvalidUsernameException(String message) {
+            super(message);
+        }
+    }
+    static class User {
+        public void registerUser(String username) throws InvalidUsernameException {
+            if (!username.matches("[a-zA-Z0-9_]+")) {
+                throw new InvalidUsernameException("Invalid username format: " + username);
+            }
+            System.out.println("User registered successfully: " + username);
+        }
+    }
+
+    
+    public static void main(String[] args) {
+        User user = new User();
+        try {
+            user.registerUser("valid_user"); 
+            user.registerUser("Invalid User!"); 
+        } catch (InvalidUsernameException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
