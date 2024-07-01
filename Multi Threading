@@ -1,0 +1,144 @@
+//Creating a thread using THREAD class
+class HI extends Thread 
+{
+   public void run()
+    {
+        for(int i=0;i<5;i++)
+        {
+        System.out.println("HI");
+        }
+        
+    }
+}
+class HELLO extends Thread
+{
+    public void run()
+    {
+        for(int i=0;i<5;i++)
+        System.out.println("HELLO");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+       HI obj=new HI();
+       HELLO obj1=new HELLO();
+       obj.start();
+       obj1.start();
+    }
+}
+
+
+
+//Creating a thread using Runnable interface
+
+class HI implements Runnable 
+{
+   public void run()
+    {
+        for(int i=0;i<5;i++)
+        {
+        System.out.println("HI");
+        }
+        
+    }
+}
+class HELLO implements Runnable
+{
+    public void run()
+    {
+        for(int i=0;i<5;i++)
+        System.out.println("HELLO");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+       Runnable obj=new HI();
+       Runnable obj1=new HELLO();
+       Thread t1=new Thread(obj);
+       Thread t2=new Thread(obj1);
+       t1.start();
+       t2.start();
+    }
+}
+
+//Sleep()
+try
+        {Thread.sleep(1000);
+        }catch(Exception e) {}   
+
+//isalive
+t1.isalive();
+
+//getname() Check Bus seat reservation
+//setname()
+//join()
+//getPriority()
+//setPriority()
+
+
+//Without start() run() method
+class MyThread extends Thread {
+    public void run() {
+        System.out.println("Thread is running.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MyThread t1 = new MyThread();
+        t1.start();  // Starts a new thread and runs the run() method in that thread
+
+        MyThread t2 = new MyThread();
+        t2.run();    // Runs the run() method in the main thread
+    }
+}
+
+//Lambda Expression using THREAD class
+
+public class Main 
+{
+    public static void main(String[] args) throws Exception
+    {
+       Thread t1=new obj=()->
+       for(int i=0;i<5;i++)
+       System.out.println("HI");
+       try
+       {
+           Thread.sleep(1000);
+       }
+       catch(Exception e)
+       {
+       });
+    }
+}
+       
+       t1.start();
+       }
+}
+
+
+
+//Lambda Expression using RUNNABLE interface
+public class Main 
+{
+    public static void main(String[] args)
+    {
+       Runnable obj=()->
+       for(int i=0;i<5;i++)
+       System.out.println("HI");
+       try
+       {
+           Thread.sleep(1000);
+       }
+       catch(Exception e)
+       {
+       });
+    }
+}
+       Thread t1=new Thread(obj);
+       t1.start();
+       }
+}
+
+//SYNCHRONISATION
+//Check Bus Seat reservation program
