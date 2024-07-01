@@ -336,7 +336,112 @@ public class Main {
             }
         }
        if (!word.isEmpty()) {
-         System.out.print(word+" ");
+         System.out.println(word);
        }
     }
 } 
+17.import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        char c;
+        String word = ""; 
+        Scanner obj = new Scanner(System.in);
+        String str = obj.nextLine(); 
+        
+        for (int i = 0; i < str.length(); i++) {
+            c = str.charAt(i);
+            if (c != ' ') {
+                word += c;
+            } else {
+               if (word.length()==3)
+               System.out.print(word);
+             word="";   
+            }
+        }
+       if (word.length()==3) {
+         System.out.println(word);
+       }
+    }
+} 
+
+18.import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        char c;
+        String word = ""; 
+        String l_word="";
+        Scanner obj = new Scanner(System.in);
+        String str = obj.nextLine(); 
+        
+        for (int i = 0; i < str.length(); i++) {
+            c = str.charAt(i);
+            if (c != ' ') {
+                word += c;
+            } else {
+               if (word.length()>l_word.length())
+               l_word=word;
+             word="";   
+            }
+        }
+                System.out.println(l_word);
+        }
+} 
+
+19.import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        char c;
+        String word = ""; 
+        int count=1;
+        Scanner obj = new Scanner(System.in);
+        String str = obj.nextLine(); 
+        
+        for (int i = 0; i < str.length(); i++) {
+            c = str.charAt(i);
+            if (c != ' ') {
+                word += c;
+            } else {
+               count++;
+             word="";   
+            }
+        }
+       if (!word.isEmpty()) {
+         System.out.println(count);
+       }
+    }
+} 
+
+20.import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        String word = "", newSentence = "";
+        Scanner obj = new Scanner(System.in);
+        String str = obj.nextLine(); 
+        
+        for (int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
+            if (c != ' ') {
+                word += c;
+            } else {
+                // Capitalize the first letter of the word
+                if (!word.isEmpty()) {
+                    char firstChar = Character.toUpperCase(word.charAt(0));
+                    newSentence += firstChar + word.substring(1) + " ";
+                    word = "";
+                }
+            }
+        }
+        
+        // Handle the last word in the sentence
+        if (!word.isEmpty()) {
+            char firstChar = Character.toUpperCase(word.charAt(0));
+            newSentence += firstChar + word.substring(1);
+        }
+        
+        System.out.println(newSentence);
+    }
+}
