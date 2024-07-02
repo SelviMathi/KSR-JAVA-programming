@@ -1,0 +1,117 @@
+// Creating arrayList
+import java.util.ArrayList;
+import java.util.Collections;
+class HelloWorld {
+    public static void main(String[] args) {
+        ArrayList<Integer> arr_list=new ArrayList<Integer>();
+        arr_list.add(1);
+        arr_list.add(2);
+        arr_list.add(3);
+        arr_list.add(4);
+        arr_list.add(1,4);
+        System.out.println(arr_list);
+    }
+}
+
+arr_list.size();
+
+arr_list.get(1);
+
+
+Iterating ArrayList element
+for (int i = 0; i < arr_list.size(); i++) 
+{
+    System.out.print(arr_list.get(i) + " ");
+ }
+
+
+Get Max element
+Collections.max(arr_list)
+
+Get Min element 
+Collections.min(arr_list) 
+
+
+
+ReplaceAll in Arraylist
+Collections.fill(arr_list, 4)
+
+ReplaceAllOccurence in Arraylist
+Collections.replaceAll(arr_list, “Value to replace", “Value");
+
+ Reverse
+Collections.reverse(arr_list);
+ Shuffle
+  Collections.shuffle(arr_list);
+
+Swap  Arraylist
+Collections.swap(arr_list, 0, 4);
+
+
+RemoveIF in Arraylist
+arr_list.removeIf(n -> (n % 3 == 0));
+arr_list.removeIf(n -> (n.charAt(0) == 'S')); 
+ 
+
+Clear array
+arrayList.clear();
+
+ 
+Sublist
+// getting the subList 
+            // using subList() method 
+            List<Integer> arrlist2 = arr_list.subList(2, 4); 
+equals
+ arr_list.equals(arr_list2)
+
+ contains
+arr.contains(5)
+
+Storage capcity
+arrlist.ensureCapacity(5000);
+
+
+ arr_list.forEach((n) -> Sop(n))
+
+// using indexOf() to find index of 3 
+  int pos =arr_list.indexOf(3); 
+
+// check if the list is empty or not 
+        ans = arr_list.isEmpty(); 
+
+// last index of 30 
+        int element = arr_list.lastIndexOf(30);
+ int element = arr_list.lastIndexOf(arr_list);
+
+// removing range of 1st 2 elements
+        arr_list.removeRange(0, 2);
+ 
+
+
+ 
+
+
+
+
+
+
+//Sort
+//Binary search
+import java.util.ArrayList;
+import java.util.Collections;
+class HelloWorld {
+    public static void main(String[] args) {
+        ArrayList<Integer> arr_list=new ArrayList<Integer>();
+        arr_list.add(1);
+        arr_list.add(2);
+        arr_list.add(3);
+        arr_list.add(4);
+        arr_list.add(1,4);
+        Collections.sort(arr_list);
+        int res=Collections.binarySearch(arr_list, 4);
+        System.out.println(res); 
+        
+    }
+}
+
+
