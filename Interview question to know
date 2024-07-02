@@ -1,0 +1,243 @@
+1.Given a list of integers, separate odd and even numbers?
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.stream.Collectors;
+ 
+public class Java8Code 
+{
+    public static void main(String[] args) 
+    {
+        List<Integer> listOfIntegers = Arrays.asList(71, 18, 42, 21, 67, 32, 95, 14, 56, 87);
+         
+        Map<Boolean, List<Integer>> oddEvenNumbersMap = 
+                listOfIntegers.stream().collect(Collectors.partitioningBy(i -> i % 2 == 0));
+         
+        Set<Entry<Boolean, List<Integer>>> entrySet = oddEvenNumbersMap.entrySet();
+         
+        for (Entry<Boolean, List<Integer>> entry : entrySet) 
+        {
+            System.out.println("--------------");
+             
+            if (entry.getKey())
+            {
+                System.out.println("Even Numbers");
+            }
+            else
+            {
+                System.out.println("Odd Numbers");
+            }
+             
+            System.out.println("--------------");
+             
+            List<Integer> list = entry.getValue();
+             
+            for (int i : list)
+            {
+                System.out.println(i);
+            }
+        }
+    }
+}
+
+2.How do you remove duplicate elements from a list using Java 8 streams?
+
+mport java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+ 
+public class Java8Code 
+{
+    public static void main(String[] args) 
+    {
+        List<String> listOfStrings = Arrays.asList("Java", "Python", "C#", "Java", "Kotlin", "Python");
+         
+        List<String> uniqueStrngs = listOfStrings.stream().distinct().collect(Collectors.toList());
+         
+        System.out.println(uniqueStrngs);
+    }
+}
+
+3. How do you find frequency of each character in a string using Java 8 streams?
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+ 
+public class Java8Code 
+{
+    public static void main(String[] args) 
+    {
+        String inputString = "Java Concept Of The Day";
+         
+        Map<Character, Long> charCountMap = 
+                    inputString.chars()
+                                .mapToObj(c -> (char) c)
+                                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+         
+        System.out.println(charCountMap);
+    }
+}
+
+4.How do you find frequency of each element in an array or a list?
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+ 
+public class Java8Code 
+{
+    public static void main(String[] args) 
+    {
+        List<String> stationeryList = Arrays.asList("Pen", "Eraser", "Note Book", "Pen", "Pencil", "Stapler", "Note Book", "Pencil");
+         
+        Map<String, Long> stationeryCountMap = 
+                stationeryList.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+         
+        System.out.println(stationeryCountMap);
+    }
+}
+
+5. How do you sort the given list of decimals in reverse order?
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+ 
+public class Java8Code 
+{
+    public static void main(String[] args) 
+    {
+        List<Double> decimalList = Arrays.asList(12.45, 23.58, 17.13, 42.89, 33.78, 71.85, 56.98, 21.12);
+         
+        decimalList.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
+    }
+}
+
+6.Given a list of strings, join the strings with ‘[‘ as prefix, ‘]’ as suffix and ‘,’ as delimiter?
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+ 
+public class Java8Code 
+{
+    public static void main(String[] args) 
+    {
+        List<String> listOfStrings = Arrays.asList("Facebook", "Twitter", "YouTube", "WhatsApp", "LinkedIn");
+         
+        String joinedString = listOfStrings.stream().collect(Collectors.joining(", ", "[", "]"));
+         
+        System.out.println(joinedString);
+    }
+}
+
+7.From the given list of integers, print the numbers which are multiples of 5?
+
+import java.util.Arrays;
+import java.util.List;
+ 
+public class Java8Code 
+{
+    public static void main(String[] args) 
+    {
+        List<Integer> listOfIntegers = Arrays.asList(45, 12, 56, 15, 24, 75, 31, 89);
+         
+        listOfIntegers.stream().filter(i -> i % 5 == 0).forEach(System.out::println);
+    }
+}
+8.Given a list of integers, find maximum and minimum of those numbers?
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+ 
+public class Java8Code 
+{
+    public static void main(String[] args) 
+    {
+        List<Integer> listOfIntegers = Arrays.asList(45, 12, 56, 15, 24, 75, 31, 89);
+         
+        int max = listOfIntegers.stream().max(Comparator.naturalOrder()).get();
+         
+        System.out.println("Maximum Element : "+max);
+         
+        int min = listOfIntegers.stream().min(Comparator.naturalOrder()).get();
+         
+        System.out.println("Minimum Element : "+min);
+    }
+}
+
+9.How do you merge two unsorted arrays into single sorted array using Java 8 streams?
+
+import java.util.Arrays;
+import java.util.stream.IntStream;
+ 
+public class Java8Code 
+{
+    public static void main(String[] args) 
+    {
+        int[] a = new int[] {4, 2, 7, 1};
+         
+        int[] b = new int[] {8, 3, 9, 5};
+         
+        int[] c = IntStream.concat(Arrays.stream(a), Arrays.stream(b)).sorted().toArray();
+         
+        System.out.println(Arrays.toString(c));
+    }
+}
+
+10.How do you merge two unsorted arrays into single sorted array without duplicates?
+import java.util.Arrays;
+import java.util.stream.IntStream;
+ 
+public class Java8Code 
+{
+    public static void main(String[] args) 
+    {
+        int[] a = new int[] {4, 2, 5, 1};
+         
+        int[] b = new int[] {8, 1, 9, 5};
+         
+        int[] c = IntStream.concat(Arrays.stream(a), Arrays.stream(b)).sorted().distinct().toArray();
+         
+        System.out.println(Arrays.toString(c));
+    }
+}
+
+11.How do you get three maximum numbers and three minimum numbers from the given list of integers?
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+ 
+public class Java8Code 
+{
+    public static void main(String[] args) 
+    {
+        List<Integer> listOfIntegers = Arrays.asList(45, 12, 56, 15, 24, 75, 31, 89);
+         
+        //3 minimum Numbers
+         
+        System.out.println("-----------------");
+         
+        System.out.println("Minimum 3 Numbers");
+         
+        System.out.println("-----------------");
+         
+        listOfIntegers.stream().sorted().limit(3).forEach(System.out::println);
+         
+        //3 Maximum Numbers
+         
+        System.out.println("-----------------");
+         
+        System.out.println("Maximum 3 Numbers");
+         
+        System.out.println("-----------------");
+         
+listOfIntegers.stream().sorted(Comparator.reverseOrder()).limit(3).forEach(System.out::println);
+    }
+}
