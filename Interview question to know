@@ -1,4 +1,34 @@
-1.Given a list of integers, separate odd and even numbers?
+1.How do you get last element of an array?
+
+2.First 10 odd numbers
+
+3.Print first 10 even numbers
+
+4.Reverse an integer array
+
+5. Fibonacci series
+
+6.How do you find common elements between two arrays?
+
+7.How do you find the most repeated element in an array?
+
+8.Reverse each word of a string ?
+
+9.Given a list of strings, sort them according to increasing order of their length?
+
+10.Palindrome program 
+
+11.Find first non-repeated character in a string?
+
+12.Find first repeated character in a string?
+
+13.Print duplicate characters in a string?
+
+14.How do you extract duplicate elements from an array?
+
+15.Given a list of strings, find out those strings which start with a number?
+
+16.Given a list of integers, separate odd and even numbers?
 
 import java.util.Arrays;
 import java.util.List;
@@ -7,7 +37,7 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.stream.Collectors;
  
-public class Java8Code 
+public class Main 
 {
     public static void main(String[] args) 
     {
@@ -43,13 +73,13 @@ public class Java8Code
     }
 }
 
-2.How do you remove duplicate elements from a list using Java 8 streams?
+17.How do you remove duplicate elements from a list using Java 8 streams?
 
 mport java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
  
-public class Java8Code 
+public class Code 
 {
     public static void main(String[] args) 
     {
@@ -61,12 +91,12 @@ public class Java8Code
     }
 }
 
-3. How do you find frequency of each character in a string using Java 8 streams?
+18. How do you find frequency of each character in a string using Java 8 streams?
 import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
  
-public class Java8Code 
+public class Code 
 {
     public static void main(String[] args) 
     {
@@ -81,7 +111,7 @@ public class Java8Code
     }
 }
 
-4.How do you find frequency of each element in an array or a list?
+19.How do you find frequency of each element in an array or a list?
 
 import java.util.Arrays;
 import java.util.List;
@@ -89,7 +119,7 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
  
-public class Java8Code 
+public class Code 
 {
     public static void main(String[] args) 
     {
@@ -102,13 +132,12 @@ public class Java8Code
     }
 }
 
-5. How do you sort the given list of decimals in reverse order?
-
+20. How do you sort the given list of decimals in reverse order?
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
  
-public class Java8Code 
+public class Code 
 {
     public static void main(String[] args) 
     {
@@ -118,13 +147,13 @@ public class Java8Code
     }
 }
 
-6.Given a list of strings, join the strings with ‘[‘ as prefix, ‘]’ as suffix and ‘,’ as delimiter?
+21.Given a list of strings, join the strings with ‘[‘ as prefix, ‘]’ as suffix and ‘,’ as delimiter?
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
  
-public class Java8Code 
+public class Code 
 {
     public static void main(String[] args) 
     {
@@ -136,12 +165,12 @@ public class Java8Code
     }
 }
 
-7.From the given list of integers, print the numbers which are multiples of 5?
+22.From the given list of integers, print the numbers which are multiples of 5?
 
 import java.util.Arrays;
 import java.util.List;
  
-public class Java8Code 
+public class Code 
 {
     public static void main(String[] args) 
     {
@@ -150,13 +179,14 @@ public class Java8Code
         listOfIntegers.stream().filter(i -> i % 5 == 0).forEach(System.out::println);
     }
 }
-8.Given a list of integers, find maximum and minimum of those numbers?
+
+23.Given a list of integers, find maximum and minimum of those numbers?
 
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
  
-public class Java8Code 
+public class Code 
 {
     public static void main(String[] args) 
     {
@@ -172,12 +202,12 @@ public class Java8Code
     }
 }
 
-9.How do you merge two unsorted arrays into single sorted array using Java 8 streams?
+24.How do you merge two unsorted arrays into single sorted array using Java 8 streams?
 
 import java.util.Arrays;
 import java.util.stream.IntStream;
  
-public class Java8Code 
+public class Code 
 {
     public static void main(String[] args) 
     {
@@ -191,11 +221,11 @@ public class Java8Code
     }
 }
 
-10.How do you merge two unsorted arrays into single sorted array without duplicates?
+25.How do you merge two unsorted arrays into single sorted array without duplicates?
 import java.util.Arrays;
 import java.util.stream.IntStream;
  
-public class Java8Code 
+public class Code 
 {
     public static void main(String[] args) 
     {
@@ -209,12 +239,12 @@ public class Java8Code
     }
 }
 
-11.How do you get three maximum numbers and three minimum numbers from the given list of integers?
+26.How do you get three maximum numbers and three minimum numbers from the given list of integers?
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
  
-public class Java8Code 
+public class Code 
 {
     public static void main(String[] args) 
     {
@@ -239,5 +269,47 @@ public class Java8Code
         System.out.println("-----------------");
          
 listOfIntegers.stream().sorted(Comparator.reverseOrder()).limit(3).forEach(System.out::println);
+    }
+}
+
+27.program to check if two strings are anagrams or not?
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+ 
+public class Code 
+{
+    public static void main(String[] args) 
+    {
+        String s1 = "RaceCar";
+        String s2 = "CarRace";
+         
+        s1 = Stream.of(s1.split("")).map(String::toUpperCase).sorted().collect(Collectors.joining());
+         
+        s2 = Stream.of(s2.split("")).map(String::toUpperCase).sorted().collect(Collectors.joining());
+         
+        if (s1.equals(s2)) 
+        {
+            System.out.println("Two strings are anagrams");
+        }
+        else
+        {
+            System.out.println("Two strings are not anagrams");
+        }
+    }
+}
+
+28.Find the age of a person in years if the birthday has given?
+
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+ 
+public class Main
+{
+    public static void main(String[] args) 
+    {
+        LocalDate birthDay = LocalDate.of(1985, 01, 23);
+        LocalDate today = LocalDate.now();
+         
+        System.out.println(ChronoUnit.YEARS.between(birthDay, today));
     }
 }
