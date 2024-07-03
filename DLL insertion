@@ -28,6 +28,25 @@ class DoublyLinkedList {
        }
     }
 
+    public void insertAfter(int pos, int data) {
+        int size = calcSize(head);
+        if (n < 1 || len < n)
+    System.out.println("Invalid position");
+        else {
+        Node newNode = new Node(data);
+            newNode.next = null;
+          newNode.prev = null;
+             Node tptr = start;
+           while (--pos > 0) 
+                tptr = tptr.next;
+    
+           
+            tptr.next.prev = newNode;
+            newNode.next = tptr.next;
+           newNode.prev = tptr;
+           tptr.next = newNode;
+        }
+    }
     public void displayDLL() {
         Node tptr = start;
         Node end = null;
