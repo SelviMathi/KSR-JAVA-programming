@@ -29,8 +29,8 @@ class DoublyLinkedList {
     }
 
     public void insertAfter(int pos, int data) {
-        int size = calcSize(head);
-        if (n < 1 || len < n)
+        int size = calcSize(start);
+        if (pos < 1 || size < pos)
     System.out.println("Invalid position");
         else {
         Node newNode = new Node(data);
@@ -66,7 +66,14 @@ class DoublyLinkedList {
         }
         System.out.println();
     }
-    
+     public int calcSize(Node node){
+        int size = 0;
+        while(node!=null){
+            node = node.next;
+            size++;
+        }
+        return size;
+    }
      public void insertEnd(int data) {
         // Creating newNode memory & assigning data value
         Node newNode = new Node(data);
@@ -110,6 +117,9 @@ public class Main {
         obj.insertEnd(4);
         obj.insertEnd(6);
     obj.insertEnd(7);
+    obj.displayDLL();
+    System.out.println(); 
+    obj.insertAfter(3,100);
     obj.displayDLL();
     }
 }
