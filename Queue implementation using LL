@@ -1,0 +1,89 @@
+import java.util.*;
+public class Main
+{
+  private Node front, rear;
+  private int s;		
+  private class Node
+  {
+    int data;
+    Node next;
+  }
+
+
+  public Main ()
+  {
+    front = null;
+    rear = null;
+    s = 0;
+  }
+
+  public boolean isEmpty ()
+  {
+    return (s == 0);
+  }
+
+  public void disp ()
+  {
+    if (s == 0)
+      {
+	System.out.println ("queue is empty");
+	return;
+      }
+    Node temp = front;
+    while (temp != null)
+      {
+	System.out.print (" " + temp.data);
+	temp = temp.next;
+      }
+
+  }
+  //to Remove item
+  public void dequeue ()
+  {
+    int data = front.data;
+    front = front.next;
+    if (isEmpty ())
+      {
+	rear = null;
+      }
+    s--;
+
+  }
+
+  //to Add data .
+  public void enqueue (int data)
+  {
+    Node old = rear;
+    rear = new Node ();
+    rear.data = data;
+    rear.next = null;
+    if (isEmpty ())
+      {
+	front = rear;
+      }
+    else
+      {
+	old.next = rear;
+      }
+    s++;
+     }
+
+  public static void main (String args[])
+  {
+
+    Main queue = new Main ();
+    queue.enqueue (1);
+    queue.enqueue (2);
+    queue.enqueue (3);
+    queue.enqueue (4);
+    queue.enqueue (450);queue.enqueue (40);
+    System.out.println ("Original queue :");
+    queue.disp ();
+    System.out.println ();
+
+    queue.dequeue ();
+    queue.dequeue ();
+    System.out.println ("Queue after dequeue");
+    queue.disp ();
+  }
+}
