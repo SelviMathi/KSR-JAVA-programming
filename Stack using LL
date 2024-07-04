@@ -1,0 +1,83 @@
+class Node {
+    int data;
+    Node next;
+
+    public Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+
+class Stack {
+    private Node top;
+
+    // Constructor to initialize the stack
+    public Stack() {
+        this.top = null;
+    }
+
+    // Push an element onto the stack
+    public void push(int data) {
+        Node newNode = new Node(data);
+        newNode.next = top;
+        top = newNode;
+    }
+
+    // Pop an element from the stack
+    public int pop() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return -1; // Return a default value or throw an exception
+        } else {
+            int data = top.data;
+            top = top.next;
+            return data;
+        }
+    }
+
+    // Peek the top element of the stack
+    public int peek() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return -1; // Return a default value or throw an exception
+        }
+        return top.data;
+    }
+
+    // Check if the stack is empty
+    public boolean isEmpty() {
+        return top == null;
+    }
+
+    // Display the elements in the stack
+    public void display() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+        } else {
+            Node temp = top;
+            while (temp != null) {
+                System.out.print(temp.data + " ");
+                temp = temp.next;
+            }
+            System.out.println();
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Stack stack = new Stack();
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.display();
+        System.out.println("Popped element: " + stack.pop());
+        stack.display();
+        System.out.println("Top element: " + stack.peek());
+        stack.display();
+        System.out.println("Popped element: " + stack.pop());
+        System.out.println("Popped element: " + stack.pop());
+        System.out.println("Popped element: " + stack.pop()); // Trying to pop from empty stack
+    }
+}
+
