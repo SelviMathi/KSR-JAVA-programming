@@ -1,0 +1,63 @@
+class Stack {
+    int stack[] = new int[5];
+    int top = 0;
+
+    void push(int num) {
+        if (top == 5) {
+            System.out.println("Stack is full");
+        } else {
+            stack[top] = num;
+            top++;
+        }
+    }
+
+    int pop() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return -1; // Return a default value or throw an exception
+        } else {
+            top--;
+            int data = stack[top];
+            stack[top] = 0;
+            return data;
+        }
+    }
+
+    void display() {
+        for (int n : stack)
+            System.out.print(n + " ");
+        System.out.println();
+    }
+
+    int peek() {
+        if (isEmpty()) {
+            System.out.println("Stack is empty");
+            return -1; // Return a default value or throw an exception
+        }
+        return stack[top - 1];
+    }
+
+    int size() {
+        return top;
+    }
+
+    boolean isEmpty() {
+        return top <= 0;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Stack obj = new Stack();
+        obj.push(10);
+        obj.push(15);
+        obj.display();
+        System.out.println("Popped element: " + obj.pop());
+        obj.display();
+        System.out.println("Popped element: " + obj.pop());
+        obj.display();
+        System.out.println("Popped element: " + obj.pop()); // Trying to pop from empty stack
+    }
+}
+
+
