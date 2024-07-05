@@ -1,0 +1,360 @@
+1.	Program to print plain text “Hello World”.
+2.	Program to print multiple lines of text using a single output statement.
+Example: Printing student address
+3.	Program to print single-line output by using multiple output statements.
+Example: Printing Business address
+4.	Program to add two numbers.
+5.	Program to sub two numbers.
+6.	Program to mul two numbers.
+7.	Program to div two numbers.
+8.	Program to add two numbers using runtime values.
+9.	Program to sub two numbers using runtime values.
+10.	Program to mul two numbers using runtime values.
+11.	Program to div two numbers using runtime values.
+12.	Program to find the area of the square for a given side value.
+13.	Program to find the area of the rectangle for a given height and breadth. 
+14.	Program to find the area of the circle for a given radius.
+15.	Program to find the area of the triangle for the given base and height.
+16.	Program to swap two numbers with the help of the third variable.
+17.	 Program to swap two numbers without the third variable.
+18.	Program to implement typecasting.
+19.	Program to return a 4 digit random number.
+20.	Program to calculate roots of the quadratic equation.
+21.	Programs to solve and display results of given mathematical expressions using the Math module.
+22.	Program to check and return true if the number is positive.
+23.	Program to check and return true if the number is positive, else return false.
+24.	Program to check and return true if the number is even.
+25.	Program to check and return true if the number is even, else return false.
+26.	Program to check and return true if the number is even, else return false without using %.
+27.	Program to check and return true if the number is even, else return false without if-else.
+(By using a conditional operator)
+28.	Program to check and return “even” if the number is even, else return “odd” without using the if-else and conditional operator or any other control statement.
+29. 	Program to check student subject marks and return true if the student passes all subjects.
+30.	Program to implement withdrawal operation. (Using nested if-else)
+31.Program to check given character is a vowel or not. (Using else-if ladder)
+32.Program to check and return student grades. (Using else-if ladder)
+33.Program to implement sample ATM applications.
+34.Print the following options and perform the user-selected operation.
+Deposit
+Withdrawal
+Balance Check
+PIN change
+35.Program to print numbers from 1 to 10 using a while loop.
+36.Program to print numbers from 1 to 10 using a do-while loop.
+37.Program to print numbers from 1 to 10 using a for loop.
+38.Program to print numbers in a user-given range using a while loop.
+39.Program to print numbers in a user-given range using a do-while loop.
+40.Program to print numbers in a user-given range using a for loop.
+41.Program to print even numbers in a user-given range.
+42.Program to print odd numbers in a user-given range.
+43.Program to find the sum of the numbers in a user-given range.
+44.Program to find the sum of the even numbers in a user-given range. 
+45.Program to find the sum of the odd numbers in a user-given range.
+46.Program to find the sum of the only positive numbers in the user-given range.
+47.Program to find the sum of the only negative numbers in the user-given range.
+48.Program to check and return true if the given number is prime, else return false.
+49.Program to print primes in the user-given range.
+50.Program to print a random number from a specific user-given range.
+51.Program to find the sum of the primes in the user-given range.
+52.Program to count and return the number of primes up to the user-given range.
+53.Program to count and return the number of primes in the user-given range.
+54.Program to check and return true if the given number is an Armstrong number, else return false.
+55.Program to print Armstrong numbers in the user-given range.
+56.Program to find the sum of the Armstrong numbers in the user-given range.
+57.Program to return the number of Armstrong numbers up to the user-given range.
+58.Program to print Fibonacci series up to user-given number.
+59.Program to print Fibonacci series terms in the user-given range. 
+ 60.Program to print primes from the Fibonacci series terms in the user-given range.
+61.Program to return the nearest prime number of the user-given number.
+62.Program to return the number of digits in the user-given number.
+63.Program to return the sum of digits of a user-given number.
+ 64.Program to return the sum of the even digits of a user-given number.
+65.Program to return the sum of the odd digits of a user-given number.
+66.Program to return the reverse of a user-given number.
+Program to check and return true if the number is a palindrome, else return false.
+Program to check and return true if the given number is prime and the reverse of the given number is also a prime. (Ex: 11, 13, 71, etc)
+Program to print all palindrome numbers from the user-given range.
+Program to print all palindrome-prime numbers from the user-given range.
+Program to check and return true if a user-given number is a perfect square root, else return false.
+Program to check and return true if a user-given number is the power of 2, else return false.
+Program to check and return true if a user-given number is the power of n, else return false.
+Program to check and return true if the user-given number is a sequential digit number, else return false.
+Program to check and print all sequential digit numbers in a user-given range.
+Program to print elements from the user-given 1D array.
+Program to print positive numbers from the user-given1D array.
+Program to print even numbers from the user-given1D array.
+Program to print odd numbers from the user-given1D array.
+Program to find and return the sum of the numbers from the user-given1D array.
+Program to find and return the sum of the positive numbers from the user-given1D array.
+Program to find and return the sum of the negative numbers from the user-given1D array.
+Program to find and return the sum of the even numbers from the user-given1D array.
+Program to find and return the sum of the odd numbers from the user-given1D array.
+Programs to print different patterns as given below.
+Rectangle
+Hallow rectangle
+Left angle triangle
+Right angle triangle
+Rambus
+Letters B, S, T, I, L, H, D, P, O, U, 7, 9, etc.
+Program to print prime elements from the array.
+Program to return the nearest prime number from the given array for the user-given number.
+(Input: [13,31,56,71,97], 35 Output:31)
+Program to print Armstrong numbers from the array.
+Program to print palindrome numbers from the array.
+Program to check and return the smallest prime number from the array.
+Program to check and return the largest prime number from the array.
+Program to check and true if all the elements from the smallest prime to the largest prime in the array.
+Program to check and return missing numbers in between the smallest and the largest elements from the array. (You can assume only one number is missing. If no number is missing then return 0)
+Program to check and return missing prime numbers in between the smallest prime and to largest prime from the array. (You can assume only one number is missing. If no number is missing then return 0)
+Program to print sorted array in ascending order.
+Program to print sorted array in descending order.
+ Program to return a sorted merged array of given two sorted arrays.
+Program to return a sorted merged array of given two unsorted arrays.
+Program to return a maximum element from the array.
+Program to return a minimum element from the array.
+Program to return an element from the given array, that have highest unique occurrence among other elements in the array.
+Example:
+Input1: [11,23,23,12,45,45,45] Output: 45
+Input: [89,23,23,56,56] Output: 89
+Program to return Kth maximum element from the array.
+Program to return Kth minimum element from the array.
+Program to check and return true if the given array is sorted, else return false.
+(Example: [4,5,6,2,3] sorted, [6,5,7,8,9] is not sorted)
+Program to return the majority element from the given array. An element that occurred 
+for the maximum number of times is a majority element. 
+(you can consider only one majority is available in the given array)
+Program to return the minority element from the given array. An element that occurred 
+for the minimum number of times is a majority element. (you can consider only one majority is available in the given array)
+Program to check and return true if the array is neutral, else return false.
+ (An array contains the same number of positive elements and negative elements as a neutral array) Program to check and return true if the array is prime neutral, else return false. 
+(An array contains the same number of primes and non-primes as a neutral array)
+Program to rotate the given array with a given number of positions, and display the array.
+(Ex: input: [20,5,38,60,45], 2, Output: [38,60,45,20,5]) 
+Program to check and return true if all the array elements contain the same number of 
+digits, else return false.
+(Ex: input1: [20,5,38,60,45], Output1: false. Input2: [20,56,38,60,45], Output: true)
+Program to check and return true if all the elements contain the unique number of digits, 
+else return false. (Input: [6,97,1543,734] Output: true, input: [36,28,124] Output: false)
+Program to check and return true if the occurrence of each element is unique, else return   
+false. (Ex: input1: [20,38,20,45,20,38], Output1: true. Input2: [20,20,45,45], Output: false)
+Program to check and return true if all the prime elements contain the same number of 
+digits in the given array, else return false.
+Program to check and return true if all the prime elements contain the unique number of 
+digits, else return false. 
+Program to check and return the element from the array that has occurred for a unique 
+time. (You can assume only one element is occurred for unique times)
+Program to read and print a string from the user.
+Program to read and print a character array from the user.
+Program to differentiate string and character array.
+Program to print lowercase characters from the given string.
+Program to print uppercase characters from the given string.
+Program to print digits from the given string.
+Program to print special characters from the given string.
+Program to check and return true if the given string is a valid password. 
+Program to check and return true if the given string is a valid user-id.
+Program to check and return true if the given string is a valid Gmail ID.
+Program to check and return true if the given string is a valid email ID.
+Program to return the reverse of a user-given string.
+Program to return true if the user-given string is a palindrome string, else return false.
+Program to print prime digits from the given string.
+(Ex: s=” a123b45c”, Output:  2 3 5)
+Program to print numbers from the given string.
+(Ex: s=” a137b48c”, Output: 137 48)
+Program to check and print prime numbers from the user-given string.
+(Ex: s=” a13b4c11d56e31”, Output: 13 11 31)
+Program to check and return true if it is possible to make a sequential digit number from 
+the given string, else return false.
+Program to check and return sequential digit number if it is possible to make a sequential 
+digit number from the given string, else return 0.
+Program to check and return the sequential digit numbers from the user-given string.
+(Ex: Input: “a12b46” Output: 12, Input: “ab567ck667” Output:567 67)
+Program to return the longest possible palindrome substring from the user-given string.
+Program to return the longest possible substring that contains maximum vowels from
+ the user-given string.
+Program to return the longest possible substring that contains maximum special
+ characters from the user-given string.
+Program to return the longest possible substring that contains a unique character from
+ the user-given string.
+Program to return the longest substring from the array that contains the maximum 
+number of special characters.
+Program to return the longest substring from the array that contains the maximum 
+number of vowels.
+Program to return true if the number of appearances of "is" anywhere in the string is 
+equal to the number of appearances of "not" anywhere in the string (case sensitive).
+Program to return true if the array contains, somewhere, three increasing adjacent 
+numbers like .... 4, 5, 6, ... or 23, 24, 25.
+
+
+The parameter weekday is true if it is a weekday, and the parameter vacation is true if we are on vacation. We sleep in if it is not a weekday or we're on vacation. Return true if we sleep in.
+sleepIn(false, false) → true
+sleepIn(true, false) → false
+sleepIn(false, true) → true 
+
+
+Given an int n, return the absolute difference between n and 21, except return double the absolute difference if n is over 21.
+diff21(19) → 2
+diff21(10) → 11
+diff21(21) → 0
+
+
+143.
+Given a non-empty string and an int n, return a new string where the char at index n has been removed. The value of n will be a valid index of a char in the original string (i.e. n will be in the range 0..str.length()-1 inclusive).
+missingChar("kitten", 1) → "ktten"
+missingChar("kitten", 0) → "itten"
+missingChar("kitten", 4) → "kittn"
+144.
+Given a string, take the last char and return a new string with the last char added at the front and back, so "cat" yields "tcatt". The original string will be length 1 or more.
+backAround("cat") → "tcatt"
+backAround("Hello") → "oHelloo"
+backAround("a") → "aaa"
+145.
+We'll say that a number is "teen" if it is in the range 13..19 inclusive. Given 3 int values, return true if 1 or more of them are teen.
+hasTeen(13, 20, 10) → true
+hasTeen(20, 19, 10) → true
+hasTeen(20, 10, 13) → true
+146. 
+Given 2 int values, return whichever value is nearest to the value 10, or return 0 in the event of a tie. Note that Math.abs(n) returns the absolute value of a number.
+close10(8, 13) → 8
+close10(13, 8) → 8
+close10(13, 7) → 0
+147.
+Return true if the given string contains between 1 and 3 'e' chars.
+stringE("Hello") → true
+stringE("Heelle") → true
+stringE("Heelele") → false
+148. 
+We want to make a row of bricks that is goal inches long. We have a number of small bricks (1 inch each) and big bricks (5 inches each). Return true if it is possible to make the goal by choosing from the given bricks. This is a little harder than it looks and can be done without any loops.  
+makeBricks(3, 1, 8) → true
+makeBricks(3, 1, 9) → false
+makeBricks(3, 2, 10) → true
+
+
+
+
+149.
+Given 3 int values, a b c, return their sum. However, if any of the values is a teen -- in the range 13..19 inclusive -- then that value counts as 0, except 15 and 16 do not count as a teens. Write a separate helper "public int fixTeen(int n) {"that takes in an int value and returns that value fixed for the teen rule. In this way, you avoid repeating the teen code 3 times (i.e. "decomposition"). Define the helper below and at the same indent level as the main noTeenSum().
+noTeenSum(1, 2, 3) → 6
+noTeenSum(2, 13, 1) → 3
+noTeenSum(2, 1, 14) → 3
+150.
+Given 3 int values, a b c, return their sum. However, if one of the values is the same as another of the values, it does not count towards the sum.
+loneSum(1, 2, 3) → 6
+loneSum(3, 2, 3) → 2
+loneSum(3, 3, 3) → 0
+151.
+Given three ints, a b c, one of them is small, one is medium and one is large. Return true if the three values are evenly spaced, so the difference between small and medium is the same as the difference between medium and large.
+evenlySpaced(2, 4, 6) → true
+evenlySpaced(4, 6, 2) → true
+evenlySpaced(4, 6, 3) → false
+152.
+We want make a package of goal kilos of chocolate. We have small bars (1 kilo each) and big bars (5 kilos each). Return the number of small bars to use, assuming we always use big bars before small bars. Return -1 if it can't be done.
+makeChocolate(4, 1, 9) → 4
+makeChocolate(4, 1, 10) → -1
+makeChocolate(4, 1, 7) → 2
+153.
+When squirrels get together for a party, they like to have cigars. A squirrel party is successful when the number of cigars is between 40 and 60, inclusive. Unless it is the weekend, in which case there is no upper bound on the number of cigars. Return true if the party with the given values is successful, or false otherwise.
+cigarParty(30, false) → false
+cigarParty(50, false) → true
+cigarParty(70, true) → true
+
+
+
+
+154.
+You are driving a little too fast, and a police officer stops you. Write code to compute the result, encoded as an int value: 0=no ticket, 1=small ticket, 2=big ticket. If speed is 60 or less, the result is 0. If speed is between 61 and 80 inclusive, the result is 1. If speed is 81 or more, the result is 2. Unless it is your birthday -- on that day, your speed can be 5 higher in all cases.
+caughtSpeeding(60, false) → 0
+caughtSpeeding(65, false) → 1
+caughtSpeeding(65, true) → 0
+155.
+The number 6 is a truly great number. Given two int values, a and b, return true if either one is 6. Or if their sum or difference is 6. Note: the function Math.abs(num) computes the absolute value of a number.
+love6(6, 4) → true
+love6(4, 5) → false
+love6(1, 5) → true
+156.
+We are having a party with amounts of tea and candy. Return the int outcome of the party encoded as 0=bad, 1=good, or 2=great. A party is good (1) if both tea and candy are at least 5. However, if either tea or candy is at least double the amount of the other one, the party is great (2). However, in all cases, if either tea or candy is less than 5, the party is always bad (0).
+teaParty(6, 8) → 1
+teaParty(3, 8) → 0
+teaParty(20, 6) → 2
+157.
+Given three ints, a b c, return true if it is possible to add two of the ints to get the third.
+twoAsOne(1, 2, 3) → true
+twoAsOne(3, 1, 2) → true
+twoAsOne(3, 2, 2) → false
+158.
+Given three ints, a b c, return true if two or more of them have the same rightmost digit. The ints are non-negative. Note: the % "mod" operator computes the remainder, e.g. 17 % 10 is 7.
+lastDigit(23, 19, 13) → true
+lastDigit(23, 19, 12) → false
+lastDigit(23, 19, 3) → true
+159.
+You have a blue lottery ticket, with ints a, b, and c on it. This makes three pairs, which we'll call ab, bc, and ac. Consider the sum of the numbers in each pair. If any pair sums to exactly 10, the result is 10. Otherwise if the ab sum is exactly 10 more than either bc or ac sums, the result is 5. Otherwise the result is 0.
+blueTicket(9, 1, 0) → 10
+blueTicket(9, 2, 0) → 0
+blueTicket(6, 1, 4) → 10
+160.
+Given a string str, if the string starts with "f" return "Fizz". If the string ends with "b" return "Buzz". If both the "f" and "b" conditions are true, return "FizzBuzz". In all other cases, return the string unchanged. (See also: FizzBuzz Code)
+
+fizzString("fig") → "Fizz"
+fizzString("dib") → "Buzz"
+fizzString("fib") → "FizzBuzz"
+161.
+Given a string and an int n, return a string made of n repetitions of the last n characters of the string. You may assume that n is between 0 and the length of the string, inclusive.
+
+repeatEnd("Hello", 3) → "llollollo"
+repeatEnd("Hello", 2) → "lolo"
+repeatEnd("Hello", 1) → "o"
+162.
+We'll say that a String is xy-balanced if for all the 'x' chars in the string, there exists a 'y' char somewhere later in the string. So "xxy" is balanced, but "xyx" is not. One 'y' can balance multiple 'x's. Return true if the given string is xy-balanced.
+xyBalance("aaxbby") → true
+xyBalance("aaxbb") → false
+xyBalance("yaaxbb") → false
+163.
+Return true if the string "cat" and "dog" appear the same number of times in the given string.
+
+catDog("catdog") → true
+catDog("catcat") → false
+catDog("1cat1cadodog") → true
+164.
+Given a string and a non-empty word string, return a string made of each char just before and just after every appearance of the word in the string. Ignore cases where there is no char before or after the word, and a char may be included twice if it is between two words.
+wordEnds("abcXY123XYijk", "XY") → "c13i"
+wordEnds("XY123XY", "XY") → "13"
+wordEnds("XY1XY", "XY") → "11"
+165.
+Look for patterns like "zip" and "zap" in the string -- length-3, starting with 'z' and ending with 'p'. Return a string where for all such words, the middle letter is gone, so "zipXzap" yields "zpXzp".
+zipZap("zipXzap") → "zpXzp"
+zipZap("zopzop") → "zpzp"
+zipZap("zzzopzop") → "zzzpzp"
+166.
+Given a string, count the number of words ending in 'y' or 'z' -- so the 'y' in "heavy" and the 'z' in "fez" count, but not the 'y' in "yellow" (not case sensitive). We'll say that a y or z is at the end of a word if there is not an alphabetic letter immediately following it. (Note: Character.isLetter(char) tests if a char is an alphabetic letter.)
+countYZ("fez day") → 2
+countYZ("day fez") → 2
+countYZ("day fyyyz") → 2
+167.
+Given a string, return the longest substring that appears at both the beginning and end of the string without overlapping. For example, sameEnds("abXab") is "ab".
+sameEnds("abXYab") → "ab"
+sameEnds("xx") → "x"
+sameEnds("xxx") → "x"
+168.
+Given a string, return the sum of the numbers appearing in the string, ignoring all other characters. A number is a series of 1 or more digit chars in a row. (Note: Character.isDigit(char) tests if a char is one of the chars '0', '1', .. '9'. Integer.parseInt(string) converts a string to an int.)
+sumNumbers("abc123xyz") → 123
+sumNumbers("aa11b33") → 44
+sumNumbers("7 11") → 18
+169.
+Given two strings, base and remove, return a version of the base string where all instances of the remove string have been removed (not case sensitive). You may assume that the remove string is length 1 or more. Remove only non-overlapping instances, so with "xxx" removing "xx" leaves "x".
+withoutString("Hello there", "llo") → "He there"
+withoutString("Hello there", "e") → "Hllo thr"
+withoutString("Hello there", "x") → "Hello there"
+170. 
+We'll say that a "triple" in a string is a char appearing three times in a row. Return the number of triples in the given string. The triples may overlap.
+countTriple("abcXXXabc") → 1
+countTriple("xxxabyyyycd") → 3
+countTriple("a") → 0
+171.
+Given a string, return the length of the largest "block" in the string. A block is a run of adjacent chars that are the same.
+maxBlock("hoopla") → 2
+maxBlock("abbCCCddBBBxx") → 3
+maxBlock("") → 0
+172.
+Given a non-empty array, return true if there is a place to split the array so that the sum of the numbers on one side is equal to the sum of the numbers on the other side.
+canBalance([1, 1, 1, 2, 1]) → true
+canBalance([2, 1, 1, 2, 1]) → false
+canBalance([10, 10]) → true
